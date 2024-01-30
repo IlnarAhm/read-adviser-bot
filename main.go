@@ -15,6 +15,7 @@ const (
 	batchSize   = 100
 )
 
+// TODO: вынести ключ телеграма в .env : github.com/joho/godotenv
 func main() {
 	eventsProcessor := telegram.New(
 		tgClient.New(tgBotHost, mustToken()),
